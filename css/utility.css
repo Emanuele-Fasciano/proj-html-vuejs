@@ -1,0 +1,33 @@
+ /* reset */
+ img,
+ svg,
+ picture,
+ video {
+     max-width: 100%;
+ }
+
+ /* BTN CLASS */
+ .button {
+     padding: 10px 25px;
+     border: 1px solid white;
+     border-radius: 30px;
+     cursor: pointer;
+     font-size: .8rem;
+     font-weight: bold;
+     background-color: rgba(255, 255, 255, 0.2);
+ }
+
+ .button-rectangle{
+    padding: 10px 40px;
+    border: 1px solid lightgray;
+    background-color: rgb(254, 248, 248);
+    display: inline-block;
+    font-weight: bold;
+ }
+
+
+ /* TITLE SECTION */
+
+ .title{
+    padding-top: 6rem;
+ }

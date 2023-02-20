@@ -17,6 +17,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- link css -->
+    <link rel="stylesheet" href="./css/utility.css">
     <link rel="stylesheet" href="./css/style.css">
 
     <!-- link Vue -->
@@ -43,56 +44,76 @@
         <!-- JUMBOTRON -->
         <div class="jumbotron d-flex justify-content-center align-items-center">
             <div class="details text-white">
-                <h2>Brand New Arrivals</h2>
-                <p>NEW COLLECTION FROM NEW YORK</p>
-                <button>VIEW ALL</button>
-                <button>LOOKBOOK</button>
+                <h2 class="display-1 fw-bolder">Brand New Arrivals</h2>
+                <p class="text-center fs-3">NEW COLLECTION FROM NEW YORK</p>
+                <div class="d-flex justify-content-center">
+                    <span class="button me-2">VIEW ALL</span>
+                    <span class="button">LOOKBOOK</span>
+                </div>
+            </div>
+            <div class="icons">
+                <div class="icon-box"></div>
+                <div class="icon-box">
+                    <p  class="text-success"> <span>$</span> 39</p>
+                </div>
             </div>
         </div>
 
         <!-- FEATURED PRODUCTS -->
         <section class="feat-products">
-            <div class="title text-center">
-                <h3>Featured Products</h3>
-                <p>Must have products from our top sellers</p>
+            <div class="container">
+
+                <!-- title -->
+                <div class="title text-center">                  
+                    <h3>Featured Products</h3>
+                    <p>Must have products from our top sellers</p>
+                </div>
             </div>
-            <div class="selected text-center">
-                <span>Men</span>
-                <span>Women</span>
-                <span>Accesories</span>
+
+            <!-- buttons -->
+            <div class="selected text-center my-5">
+                <span class="button-rectangle bg-white">Men</span>
+                <span class="button-rectangle">Women</span>
+                <span class="button-rectangle">Accesories</span>
             </div>
+
+            <!-- images -->
             <div class="container">
                 <div class="row">
+
                     <div class="col-3">
                         <img src="./img/black_elegant_leather_jacket-400x520.jpg" alt="">
                         <div class="description">
-                            <p>Black Leather Jacket</p>
-                            <p>Men, Jacket</p>
-                            <p>$200</p>
+                            <p class="fw-bold mt-2 mb-0">Black Leather Jacket</p>
+                            <p class="type">Men, Jacket, Jeans</p>
+                            <p class="price"><span class="full-price text-decoration-line-through">235</span>$200</p>
                         </div>
                     </div>
+
                     <div class="col-3">
-                        <img src="./img/black_elegant_leather_jacket-400x520.jpg" alt="">
+                        <img src="./img/black_leather_suit-400x520.jpg" alt="">
                         <div class="description">
-                            <p>Black Leather Jacket</p>
-                            <p>Men, Jacket</p>
-                            <p>$200</p>
+                            <p class="fw-bold mt-2 mb-0">Black Leather Suit</p>
+                            <p class="type">Men, Jacket, Jeans</p>
+                            <p class="price">$200</p>
                         </div>
                     </div>
+
                     <div class="col-3">
-                        <img src="./img/black_elegant_leather_jacket-400x520.jpg" alt="">
+                        <img src="./img/blue_jacket_and_white_stripe_tee-400x520.jpg" alt="">
                         <div class="description">
-                            <p>Black Leather Jacket</p>
-                            <p>Men, Jacket</p>
-                            <p>$200</p>
+                            <p class="fw-bold mt-2 mb-0">Blue Jacket & Stripe Tee</p>
+                            <p class="type">Men, Jacket, Jeans</p>
+                            <p class="price">$200</p>
                         </div>
                     </div>
+
                     <div class="col-3">
-                        <img src="./img/black_elegant_leather_jacket-400x520.jpg" alt="">
-                        <div class="info">
-                            <p>Black Leather Jacket</p>
-                            <p>Men, Jacket</p>
-                            <p>$200</p>
+                        <img src="./img/modern_black_leather_suit-400x520.jpg" alt="">
+                        <div class="description">
+                            <p class="fw-bold mt-2 mb-0">ModernBlack Leather Suit</p>
+                            <p class="type">Men, Jacket, Jeans</p>
+                            <p class="price">$200</p>
                         </div>
                     </div>
                 </div>
@@ -101,53 +122,73 @@
 
         <!-- SEASON COLLECTION -->
         <section class="season-collection d-flex">
+                <!-- winter -->
                 <div class="collection-card">
                     <img src="./img/winter_collection_bg.jpg" alt="">
-                    <div class="description text-white">
-                        <p>Winter Collection</p>
-                        <p>STYLISH AND WARM</p>
-                        <button>VIEW MORE</button>
+                    <div class="description text-white text-center">
+                        <p class="h3">Winter Collection</p>
+                        <p class="fw-light my-4">STYLISH AND WARM</p>
+                        <span class="button">VIEW MORE</span>
                     </div>
                 </div>
+
+                <!-- spring -->              
                 <div class="collection-card">
-                    <img src="./img/winter_collection_bg.jpg" alt="">
-                    <div class="description text-white">
-                        <p>Winter Collection</p>
-                        <p>STYLISH AND WARM</p>
-                        <button>VIEW MORE</button>
+                    <img src="./img/spring_collection_bg.jpg" alt="">
+                    <div class="description text-white text-center">
+                        <p class="h3">Spring Collection</p>
+                        <p class="fw-light my-4">BRIGHT AND COLORFUL</p>
+                        <span class="button">VIEW MORE</span>
                     </div>
                 </div>
+
+                <!-- autumn -->
                 <div class="collection-card">
-                    <img src="./img/winter_collection_bg.jpg" alt="">
-                    <div class="description text-white">
-                        <p>Winter Collection</p>
-                        <p>STYLISH AND WARM</p>
-                        <button>VIEW MORE</button>
+                    <img src="./img/autumn_collection_bg.jpg" alt="">
+                    <div class="description text-white text-center">
+                        <p class="h3">Autumn Collection</p>
+                        <p class="fw-light my-4">RICH AND COMFORTABLE</p>
+                        <span class="button">VIEW MORE</span>
                     </div>
                 </div>
         </section>
 
         <!-- BEST SELLER -->
         <section  class="best-seller">
+
+            <!-- title -->
             <div class="title text-center">
                 <h3>Best Seller</h3>
                 <p>Must have products from our top sellers</p>
             </div>
+
+            <!-- images -->
             <div class="container d-flex">
+
                 <div class="img-container">
                     <img src="./img/spring_printed_dress-400x520.jpg" alt="">
+                    <div class="prev-img d-flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </div>
                 </div>
+
                 <div class="img-container">
                     <img src="./img/modern_love_tee-400x520.jpg" alt="">
                 </div>
+
                 <div class="img-container">
                     <img src="./img/black_leather_jacket-400x520.jpg" alt="">
                 </div>
+
                 <div class="img-container">
                     <img src="./img/black_elegant_leather_jacket-400x520.jpg" alt="">
                 </div>
+
                 <div class="img-container">
                     <img src="./img/hipster_black_top-400x520.jpg" alt="">
+                    <div class="next-img d-flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
                 </div>
             </div>
         </section>
@@ -155,18 +196,22 @@
         <!-- PROMO -->
         <section class="promo d-flex align-items-center">
             <div class="container d-flex justify-content-center">
-                    <div class="col-6 discount">
-                        <div class="info-promo text-white">
-                            <p>70% OFF</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, maxime.</p>
-                            <button>VIEW MORE</button>
+
+                    <!-- left col -->
+                    <div class="col-6 discount d-flex align-items-center">
+                        <div class="info-promo text-white ms-5">
+                            <p class="h1">70% OFF</p>
+                            <p class="mb-4">Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Ducimus, maxime.</p>
+                            <span class="button">VIEW MORE</span>
                         </div>
                     </div>
-                    <div class="col-6 free-shipping">
-                        <div class="info-promo text-white">
-                            <p>Free Shipping</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, maxime.</p>
-                            <button>VIEW MORE</button>
+
+                    <!--right col -->
+                    <div class="col-6 free-shipping d-flex align-items-center">
+                        <div class="info-promo text-white ms-5">
+                            <p class="h1">Free Shipping</p>
+                            <p class="mb-4">Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Ducimus, maxime.</p>
+                            <span class="button">VIEW MORE</span>
                         </div>
                     </div>
             </div>
@@ -174,23 +219,31 @@
 
         <!-- NEW ARRIVALS -->
         <section class="new-arrivals">
+
+            <!-- title -->
             <div class="title text-center">
                 <h3>New Arrivals</h3>
                 <p>Brand new products from top designers</p>
             </div>
+
+            <!-- images -->
             <div class="container-fluid d-flex">
                 <div class="img-container">
                     <img src="./img/spring_printed_dress-400x520.jpg" alt="">
                 </div>
+
                 <div class="img-container">
                     <img src="./img/modern_love_tee-400x520.jpg" alt="">
                 </div>
+
                 <div class="img-container">
                     <img src="./img/black_leather_jacket-400x520.jpg" alt="">
                 </div>
+
                 <div class="img-container">
                     <img src="./img/black_elegant_leather_jacket-400x520.jpg" alt="">
                 </div>
+
                 <div class="img-container">
                     <img src="./img/hipster_black_top-400x520.jpg" alt="">
                 </div>
@@ -201,139 +254,238 @@
         <!-- CIT -->
         <section class="cit d-flex justify-content-center align-items-center">
             <div class="details text-white text-center">
-                <img c src="./img/man_testimonial.png" alt="">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui laborum repellat eveniet eligendi voluptate obcaecati beatae voluptatem facilis officiis consectetur cumque eaque, deleniti repellendus asperiores omnis minus ab aliquid est!</p>
-                <p>Dario Pineda, theme Fusion</p>
-                <span></span> <span></span>
+                <img src="./img/man_testimonial.png" alt="">
+                <p class="my-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui laborum repellat eveniet eligendi voluptate obcaecati beatae voluptatem facilis officiis consectetur cumque eaque, deleniti repellendus asperiores omnis minus ab aliquid est!</p>
+                <p> <span class="fw-semibold">Dario Pineda</span>, Theme Fusion</p>
+                <span><i class="fa-solid fa-circle me-2"></i></span> 
+                <span><i class="fa-regular fa-circle"></i></span>
         </section>
 
         <!-- BLOG -->
         <section class="blog">
+
+            <!-- title -->
             <div class="title text-center">
                 <h3>From Our Blog</h3>
                 <p>The latest Classic Shop news</p>
             </div>
+
+            <!-- card -->
             <div class="container">
                 <div class="row">
+
                     <div class="col-4">
-                        <img src="./img/post_img_10-320x202.jpg" alt="">
+                        <img src="./img/post_img_12-700x441.jpg" alt="">
                         <div class="text">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-                            <p>Lorem ipsum dolor sit amet.</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quod ex fugiat dolorem, non impedit?</p>
+                            <p class="fw-bold mb-0">Lorem ipsum dolor, sit amet consectetur</p>
+                            <p class="date">September 9th | 0 Comments</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
                         </div>
                     </div>
+
                     <div class="col-4">
-                        <img src="./img/post_img_10-320x202.jpg" alt="">
+                        <img src="./img/post_img_11-700x441.jpg" alt="">
                         <div class="text">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-                            <p>Lorem ipsum dolor sit amet.</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quod ex fugiat dolorem, non impedit?
-                            </p>
+                            <p class="fw-bold mb-0">Lorem ipsum dolor, sit amet consectetur</p>
+                            <p class="date">September 9th | 0 Comments</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
                         </div>
                     </div>
+
                     <div class="col-4">
-                        <img src="./img/post_img_10-320x202.jpg" alt="">
+                        <img src="./img/post_img_10-700x441.jpg" alt="">
                         <div class="text">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-                            <p>Lorem ipsum dolor sit amet.</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quod ex fugiat dolorem, non impedit?
-                            </p>
+                            <p class="fw-bold mb-0">Lorem ipsum dolor, sit amet consectetur</p>
+                            <p class="date">September 9th | 0 Comments</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="line"></div>
         </section>
 
         <!-- SUMMARY -->
         <section class="summary">
             <div class="container">
                 <div class="row">
+
+                    <!-- featured -->
                     <div class="col-3">
                         <p>FEATURED</p>
                         <div class="box d-flex justify-content-between">
                             <div class="info">
-                                <p>Black Jacket $125</p>
+                                <p>Black Jacket <span class="fw-bold">$125</span></p>
                             </div>
-                            <img src="./img/black_leather_jacket-120x156.jpg" alt="" class="py-1">
+                            <img src="./img/black_leather_jacket-400x520.jpg" alt="" class="py-2">
                         </div>
+
                         <div class="box d-flex justify-content-between">
                             <div class="info">
-                                <p>Black Jacket $125</p>
+                                <p class="mb-0">Black Leather Jacket</p>
+                                <p class="mb-0">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                                <p class="fw-semibold">
+                                    <span class="text-decoration-line-through me-1">$235</span>
+                                     <span class="text-decoration-underline">$200</span>
+                                </p>
                             </div>
-                            <img src="./img/black_leather_jacket-120x156.jpg" alt="" class="py-1">
+                            <img src="./img/black_elegant_leather_jacket-400x520.jpg" alt="" class="py-2">
                         </div>
+
                         <div class="box d-flex justify-content-between">
                             <div class="info">
-                                <p>Black Jacket $125</p>
+                                <p>Hipster Black Top <span class="fw-bold">$57</span></p>
                             </div>
-                            <img src="./img/black_leather_jacket-120x156.jpg" alt="" class="py-1">
+                            <img src="./img/hipster_black_top-400x520.jpg" alt="" class="py-2">
                         </div>
                     </div>
 
+                    <!-- on sale -->
                     <div class="col-3">
-                        <p>FEATURED</p>
+                        <p>ON SALE</p>
                         <div class="box d-flex justify-content-between">
                             <div class="info">
-                                <p>Black Jacket $125</p>
+                                <p class="mb-0">Black Leather Jacket</p>
+                                <p class="mb-0">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                                <p class="fw-semibold">
+                                    <span class="text-decoration-line-through me-1">$235</span>
+                                    <span class="text-decoration-underline">$200</span>
+                                </p>
                             </div>
-                            <img src="./img/black_leather_jacket-120x156.jpg" alt="" class="py-1">
+                            <img src="./img/black_elegant_leather_jacket-400x520.jpg" alt="" class="py-2">
                         </div>
+
                         <div class="box d-flex justify-content-between">
                             <div class="info">
-                                <p>Black Jacket $125</p>
+                                <p class="mb-0">Blue Leather Jacket $125</p>
+                                <p class="fw-semibold">
+                                    <span class="text-decoration-line-through me-1">$80</span>
+                                    <span class="text-decoration-underline">$60</span>
+                                </p>
                             </div>
-                            <img src="./img/black_leather_jacket-120x156.jpg" alt="" class="py-1">
+                            <img src="./img/blue_leather_jacket-400x520.jpg" alt="" class="py-2">
                         </div>
+
                         <div class="box d-flex justify-content-between">
                             <div class="info">
-                                <p>Black Jacket $125</p>
+                                <p class="mb-0">Modern Leather Boots</p>
+                                <p class="fw-semibold">
+                                    <span class="text-decoration-line-through me-1">$50</span>
+                                    <span class="text-decoration-underline">$30</span>
+                                </p>
                             </div>
-                            <img src="./img/black_leather_jacket-120x156.jpg" alt="" class="py-1">
+                            <img src="./img/modern_leather_boots-400x520.jpg" alt="" class="py-2">
                         </div>
                     </div>
 
+                    <!-- top rated -->
                     <div class="col-3">
-                        <p>FEATURED</p>
+                        <p>TOP RATED</p>
                         <div class="box d-flex justify-content-between">
                             <div class="info">
-                                <p>Black Jacket $125</p>
+                                <p class="mb-0">Leather Gloves</p>
+                                <p class="mb-0">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                                <p class="fw-semibold">$45</p>
                             </div>
-                            <img src="./img/black_leather_jacket-120x156.jpg" alt="" class="py-1">
+                            <img src="./img/leather_gloves-400x520.jpg" alt="" class="py-2">
                         </div>
                         <div class="box d-flex justify-content-between">
                             <div class="info">
-                                <p>Black Jacket $125</p>
+                                <p class="mb-0">Black Leather Jacket</p>
+                                <p class="mb-0">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                                <p class="fw-semibold">
+                                    <span class="text-decoration-line-through me-1">$235</span>
+                                    <span class="text-decoration-underline">$200</span>
+                                </p>
                             </div>
-                            <img src="./img/black_leather_jacket-120x156.jpg" alt="" class="py-1">
+                            <img src="./img/black_elegant_leather_jacket-400x520.jpg" alt="" class="py-2">
                         </div>
                         <div class="box d-flex justify-content-between">
                             <div class="info">
-                                <p>Black Jacket $125</p>
+                                <p class="mb-0">Spring Printed Dress</p>
+                                <p class="mb-0">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                                <p class="fw-semibold">$47</p>
                             </div>
-                            <img src="./img/black_leather_jacket-120x156.jpg" alt="" class="py-1">
+                            <img src="./img/spring_printed_dress-400x520.jpg" alt="" class="py-2">
                         </div>
                     </div>
 
+                    <!-- latest reviews -->
                     <div class="col-3">
-                        <p>FEATURED</p>
+                        <p>LATEST REVIWS</p>
                         <div class="box d-flex justify-content-between">
                             <div class="info">
-                                <p>Black Jacket $125</p>
+                                <p class="mb-0">Black Leather Jacket</p>
+                                <p class="mb-0">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                                <p>by admin</p>
                             </div>
-                            <img src="./img/black_leather_jacket-120x156.jpg" alt="" class="py-1">
+                            <img src="./img/black_elegant_leather_jacket-400x520.jpg" alt="" class="py-2">
                         </div>
+
                         <div class="box d-flex justify-content-between">
                             <div class="info">
-                                <p>Black Jacket $125</p>
+                                <p class="mb-0">Leather Gloves</p>
+                                <p class="mb-0">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                                <p>by Beardman</p>
                             </div>
-                            <img src="./img/black_leather_jacket-120x156.jpg" alt="" class="py-1">
+                            <img src="./img/leather_gloves-400x520.jpg" alt="" class="py-2">
                         </div>
+
                         <div class="box d-flex justify-content-between">
                             <div class="info">
-                                <p>Black Jacket $125</p>
+                                <p class="mb-0">Spring Printed Dress</p>
+                                <p class="mb-0">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                                <p>by admin</p>
                             </div>
-                            <img src="./img/black_leather_jacket-120x156.jpg" alt="" class="py-1">
+                            <img src="./img/spring_printed_dress-400x520.jpg" alt="" class="py-2">
                         </div>
                     </div>
                 </div>
@@ -361,6 +513,18 @@
                 </div>
             </div>
         </section>
+
+        <!-- SUBSCRIBE -->
+        <section class="subscribe d-flex align-items-center text-white justify-content-center">
+            <div>letter icon</div>
+            <p>Subscribe now and get special offers</p>
+            <input type="email" placeholder="insert your email">
+            <button>SEND</button>
+        </section>
+
+        <footer>
+
+        </footer>
 
 
 
