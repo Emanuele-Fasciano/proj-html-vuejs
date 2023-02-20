@@ -1,0 +1,143 @@
+ /* reset */
+ img,
+ svg,
+ picture,
+ video {
+     max-width: 100%;
+ }
+
+ /* HEADER */
+ header{
+    height: 150px;
+    background-color: white;
+ }
+
+ header .container{
+    background-color: red;
+    height: 100%;
+ }
+
+
+ /* JUMBOTRON */
+ .jumbotron{
+    height:70vh;
+    width: 100%;
+    background-image:url(../img/home1_slide_three_bg_2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+ }
+
+ /* FEATURED PRODUCTS */
+ .feat-products{
+    height:60vh;
+    background-color: F5F5F5;
+ }
+
+
+ /* SEASON COLLECTION */
+ .season-collection .collection-card{
+    width: calc(100% / 3);
+    position: relative;
+ }
+
+ .collection-card .description{
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+ }
+
+
+ /* BEST SELLER */
+
+ .best-seller{
+    height:60vh;
+ }
+
+.best-seller .img-container{
+    width: calc(100% / 5);
+}
+
+
+/* PROMO */
+
+.promo{
+    height:60vh;
+    background-image: url(../img/bkgd_confetti-compressor.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.promo .discount{
+    height: 400px;
+    width: calc(100% / 2);
+    background-image: url(../img/promo_box_1_bg.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-right: 20px;
+}
+
+.promo .free-shipping{
+    height: 400px;
+    width: calc(100% / 2);
+    background-image: url(../img/promo_box_2_bg.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-left: 20px;
+}
+
+
+/* NEW ARRIVALS */
+
+.new-arrivals{
+    height:60vh;
+}
+
+
+/* CIT */
+
+ .cit {
+     height:60vh;
+     width: 100%;
+     background-image: url(../img/home1_slide_three_bg_2.jpg);
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+ }
+
+ .cit .details{
+    width: 50%;
+    margin: auto;
+ }
+
+
+ /* BLOG */
+
+ .blog img{
+    width: 100%;
+ }
+
+
+ /* SUMMARY */
+
+ .summary{
+    height: 40vh;
+ }
+
+ .summary .box{
+    background-color: wheat;
+    border-bottom: 1px solid black;
+    margin-bottom: 5px;
+ }
+
+  .summary .box img{
+    width: 60px;
+  }
+
+
+  /* BRANDS */
+  .brands{
+    height: 40vh;
+  }
+
