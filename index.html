@@ -7,6 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <!-- link font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;500;900&family=Roboto:wght@300;900&display=swap"
+        rel="stylesheet">
+
     <!-- link bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
@@ -35,16 +42,16 @@
 
                 <!-- upper header -->
                 <div class="upper-header d-flex justify-content-between align-items-center">
-                    <div class="icons">
-                        <i class="fa-brands fa-facebook"></i>
-                        <i class="fa-brands fa-facebook"></i>
-                        <i class="fa-brands fa-facebook"></i>
-                        <i class="fa-brands fa-facebook"></i>
+                    <div class="icons text-muted">
+                        <i class="fa-brands fa-facebook me-4"></i>
+                        <i class="fa-brands fa-twitter me-4"></i>
+                        <i class="fa-brands fa-instagram me-4"></i>
+                        <i class="fa-brands fa-youtube me-4"></i>
                     </div>
                     <div class="account d-flex align-items-center">
                         <div class="shopping-cart me-3 text-muted">Shopping-cart</div>
                         <div class="my-account px-3 text-muted">My-Account<i class="fa-solid fa-chevron-down ms-2"></i></div>
-                        <div class="cart px-5"><i class="fa-solid fa-cart-shopping me-2"></i>CART</div>
+                        <div class="cart px-5"><i class="fa-solid fa-cart-shopping me-2"></i>CART<i class="fa-solid fa-chevron-down ms-2"></i></div>
                     </div>
                 </div>
 
@@ -62,7 +69,7 @@
                                 {{link}}<i class="fa-solid fa-chevron-down ms-1"></i>
                             </li>
                         </ul>
-                        <span class="button-blue text-white mt-4">{{header.buttonText}}</span>
+                        <span class="button-blue mt-4">{{header.buttonText}}</span>
                         <span><i class="fa-solid fa-magnifying-glass pt-4 ms-3 fs-4"></i></span>
                     </div>
                 </div>
@@ -80,9 +87,13 @@
                 </div>
             </div>
             <div class="icons">
-                <div class="icon-box"></div>
-                <div class="icon-box">
-                    <p  class="text-success"> <span>$</span> 39</p>
+                <div class="icon-box text-center ">
+                    <i class="fa-solid fa-folder-closed fs-4 mt-2"></i>
+                    <p class="text-muted m-0">Demos</p>
+                </div>
+                <div class="icon-box p-1">
+                    <p  class="text-success m-0 px-3"> <span>$</span><span class="fs-3">39</span></p>
+                    <p class="text-muted m-0 ps-2">On sale</p>
                 </div>
             </div>
         </div>
@@ -101,7 +112,7 @@
 
             <!-- buttons -->
             <div class="selected text-center my-5">
-                <span class="button-rectangle bg-white">Men</span>
+                <span class="button-rectangle">Men</span>
                 <span class="button-rectangle">Women</span>
                 <span class="button-rectangle">Accesories</span>
             </div>
@@ -111,7 +122,12 @@
                 <div class="row">
 
                     <div class="col-3">
-                        <img src="./img/black_elegant_leather_jacket-400x520.jpg" alt="">
+                        <div class="img-container">
+                            <img src="./img/black_elegant_leather_jacket-400x520.jpg" alt="">
+                            <span class="d-flex justify-content-center align-items-center">
+                                <i class="fa-regular fa-square-check"></i>
+                            </span>
+                        </div>
                         <div class="description">
                             <p class="fw-bold mt-2 mb-0">Black Leather Jacket</p>
                             <p class="type">Men, Jacket, Jeans</p>
@@ -120,7 +136,12 @@
                     </div>
 
                     <div class="col-3">
-                        <img src="./img/black_leather_suit-400x520.jpg" alt="">
+                        <div class="img-container">
+                            <img src="./img/black_leather_suit-400x520.jpg" alt="">
+                            <span class="d-flex justify-content-center align-items-center">
+                                <i class="fa-regular fa-square-check"></i>
+                            </span>
+                        </div>
                         <div class="description">
                             <p class="fw-bold mt-2 mb-0">Black Leather Suit</p>
                             <p class="type">Men, Jacket, Jeans</p>
@@ -129,7 +150,12 @@
                     </div>
 
                     <div class="col-3">
-                        <img src="./img/blue_jacket_and_white_stripe_tee-400x520.jpg" alt="">
+                        <div class="img-container">
+                            <img src="./img/blue_jacket_and_white_stripe_tee-400x520.jpg" alt="">
+                            <span class="d-flex justify-content-center align-items-center">
+                                <i class="fa-regular fa-square-check"></i>
+                            </span>
+                        </div>
                         <div class="description">
                             <p class="fw-bold mt-2 mb-0">Blue Jacket & Stripe Tee</p>
                             <p class="type">Men, Jacket, Jeans</p>
@@ -138,7 +164,12 @@
                     </div>
 
                     <div class="col-3">
-                        <img src="./img/modern_black_leather_suit-400x520.jpg" alt="">
+                        <div class="img-container">
+                            <img src="./img/modern_black_leather_suit-400x520.jpg" alt="">
+                            <span class="d-flex justify-content-center align-items-center">
+                                <i class="fa-regular fa-square-check"></i>
+                            </span>
+                        </div>
                         <div class="description">
                             <p class="fw-bold mt-2 mb-0">ModernBlack Leather Suit</p>
                             <p class="type">Men, Jacket, Jeans</p>
@@ -200,27 +231,42 @@
 
                 <div class="img-container">
                     <img src="./img/spring_printed_dress-400x520.jpg" alt="">
+                    <span class="d-flex justify-content-center align-items-center">
+                        <i class="fa-regular fa-square-check"></i>
+                    </span>
                     <div class="prev-img d-flex justify-content-center align-items-center">
-                        <i class="fa-solid fa-chevron-left"></i>
+                        <i class="fa-solid fa-chevron-left d-block"></i>
                     </div>
                 </div>
 
                 <div class="img-container">
                     <img src="./img/modern_love_tee-400x520.jpg" alt="">
+                    <span class="d-flex justify-content-center align-items-center">
+                        <i class="fa-regular fa-square-check"></i>
+                    </span>
                 </div>
 
                 <div class="img-container">
                     <img src="./img/black_leather_jacket-400x520.jpg" alt="">
+                    <span class="d-flex justify-content-center align-items-center">
+                        <i class="fa-regular fa-square-check"></i>
+                    </span>
                 </div>
 
                 <div class="img-container">
                     <img src="./img/black_elegant_leather_jacket-400x520.jpg" alt="">
+                    <span class="d-flex justify-content-center align-items-center">
+                        <i class="fa-regular fa-square-check"></i>
+                    </span>
                 </div>
 
                 <div class="img-container">
                     <img src="./img/hipster_black_top-400x520.jpg" alt="">
+                    <span class="d-flex justify-content-center align-items-center">
+                        <i class="fa-regular fa-square-check"></i>
+                    </span>
                     <div class="next-img d-flex justify-content-center align-items-center">
-                        <i class="fa-solid fa-chevron-right"></i>
+                        <i class="fa-solid fa-chevron-right d-block"></i>
                     </div>
                 </div>
             </div>
@@ -268,22 +314,37 @@
             <div class="container-fluid d-flex">
                 <div class="img-container">
                     <img src="./img/spring_printed_dress-400x520.jpg" alt="">
+                    <span class="d-flex justify-content-center align-items-center">
+                        <i class="fa-regular fa-square-check"></i>
+                    </span>
                 </div>
 
                 <div class="img-container">
                     <img src="./img/modern_love_tee-400x520.jpg" alt="">
+                    <span class="d-flex justify-content-center align-items-center">
+                        <i class="fa-regular fa-square-check"></i>
+                    </span>
                 </div>
 
                 <div class="img-container">
                     <img src="./img/black_leather_jacket-400x520.jpg" alt="">
+                    <span class="d-flex justify-content-center align-items-center">
+                        <i class="fa-regular fa-square-check"></i>
+                    </span>
                 </div>
 
                 <div class="img-container">
                     <img src="./img/black_elegant_leather_jacket-400x520.jpg" alt="">
+                    <span class="d-flex justify-content-center align-items-center">
+                        <i class="fa-regular fa-square-check"></i>
+                    </span>
                 </div>
 
                 <div class="img-container">
                     <img src="./img/hipster_black_top-400x520.jpg" alt="">
+                    <span class="d-flex justify-content-center align-items-center">
+                        <i class="fa-regular fa-square-check"></i>
+                    </span>
                 </div>
             </div>
         </section>
@@ -450,6 +511,7 @@
                             </div>
                             <img src="./img/leather_gloves-400x520.jpg" alt="" class="py-2">
                         </div>
+
                         <div class="box d-flex justify-content-between">
                             <div class="info">
                                 <p class="mb-0">Black Leather Jacket</p>
@@ -467,6 +529,7 @@
                             </div>
                             <img src="./img/black_elegant_leather_jacket-400x520.jpg" alt="" class="py-2">
                         </div>
+
                         <div class="box d-flex justify-content-between">
                             <div class="info">
                                 <p class="mb-0">Spring Printed Dress</p>
@@ -539,19 +602,19 @@
         <section class="brands">
             <h4 class="text-center my-5 text-muted">BRANDS LOGOS</h4>
             <div class="container d-flex justify-content-between">
-                <div class="img-container">
+                <div class="img--container">
                     <img src="./img/b_logotype_6.png">
                 </div>
-                <div class="img-container">
+                <div class="img--container">
                     <img src="./img/b_logotype_7.png" alt="">
                 </div>
-                <div class="img-container">
+                <div class="img--container">
                     <img src="./img/b_logotype_1.png" alt="">
                 </div>
-                <div class="img-container">
+                <div class="img--container">
                     <img src="./img/b_logotype_2.png" alt="">
                 </div>
-                <div class="img-container">
+                <div class="img--container">
                     <img src="./img/b_logotype_3.png" alt="">
                 </div>
             </div>
@@ -593,10 +656,10 @@
                         </ul>
                         <div class="icons">
                         <span>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-brands fa-facebook me-4"></i>
+                            <i class="fa-brands fa-twitter me-4"></i>
+                            <i class="fa-brands fa-instagram me-4"></i>
+                            <i class="fa-brands fa-youtube me-4"></i>
                         </span>
                         </div>
                     </div>
@@ -630,7 +693,7 @@
                     </div>
                     <div class="col-3 footer-recent-posts">
                         <p class="mb-4 ms-4">RECENT POSTS</p>
-                        <ul>
+                        <ul class="mt-4">
                             <li v-for="post in footer.recentPost"
                                 class="py-3 list-post">
                                 <i class="fa-solid fa-chevron-right"></i>{{ post }}
@@ -641,7 +704,7 @@
                     <!-- TAGS -->
                     <div class="col-3 tags">
                         <p class="ms-4">TAGS</p>
-                        <ul class="d-flex flex-wrap">
+                        <ul class="d-flex flex-wrap mt-5">
                             <li v-for="tag in footer.tags"
                                 class="tag-container">
                                 {{ tag }}

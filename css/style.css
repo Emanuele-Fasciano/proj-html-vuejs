@@ -1,6 +1,7 @@
 /* body */
 body{
     background-color: #F5F5F5;
+    font-family: 'Roboto', sans-serif;
 }
 
  /* HEADER */
@@ -19,6 +20,7 @@ body{
 
  header .account{
    height: 100%;
+   cursor: pointer;
  }
 
  header .upper-header .my-account{
@@ -49,8 +51,13 @@ body{
    width: 100px;
    height: 100%;
    line-height: 84px;
-   /* border: 1px solid black; */
    text-align: center;
+ }
+
+
+ header .links-container li:hover{
+   color: hsl(215deg 61% 54%)!important;
+   box-shadow: 0 -10px 0px -4px hsl(215deg 61% 54%);
  }
 
 
@@ -73,12 +80,12 @@ body{
  }
 
  .jumbotron .icon-box{
-    width: 50px;
-    height: 50px;
+   width: 75px;
+   height: 73px;
     background-color: white;
     margin-bottom: 5px;
     border-radius: 10px;
-    box-shadow: 0px 0px 5px 5px #888888;
+    box-shadow: 0px 3px 9px 2px #888888;
  }
 
 
@@ -316,3 +323,11 @@ footer .information img{
   footer .copyright{
    height: 100px;
   }
+
+  footer .copyright ul li{
+   border-right: 1px solid white;
+  }
+
+  footer .copyright ul li:last-child {
+    border-right: none;
+   }
