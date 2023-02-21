@@ -31,12 +31,31 @@
     <div id="app">
         <!-- HEADER -->
         <header>
-            <div class="container">
-                <div class="upper-header">
-                
+            <div class="container p-0">
+                <div class="upper-header d-flex justify-content-between">
+                    <div class="icons">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                    </div>
+                    <div class="account d-flex">
+                        <div class="shopping-cart">shopping-cart</div>
+                        <div class="my-account mx-3">my-account</div>
+                        <div class="cart">cart</div>
+                    </div>
                 </div>
-                <div class="main-header">
-        
+                <div class="main-header d-flex justify-content-between align-items-center">
+                    <div class="logo-container">
+                        <img :src="header.logoImg" alt="">
+                    </div>
+                    <div class="links-container d-flex">
+                        <ul class="d-flex">
+                            <li v-for="link in header.links">{{link}}<i class="fa-solid fa-chevron-down"></i></li>
+                        </ul>
+                        <span class="button-blue text-white">{{header.buttonText}}</span>
+                        <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                    </div>
                 </div>
             </div>
         </header>
@@ -95,7 +114,7 @@
                         <div class="description">
                             <p class="fw-bold mt-2 mb-0">Black Leather Suit</p>
                             <p class="type">Men, Jacket, Jeans</p>
-                            <p class="price">$200</p>
+                            <p class="price">$176</p>
                         </div>
                     </div>
 
@@ -104,7 +123,7 @@
                         <div class="description">
                             <p class="fw-bold mt-2 mb-0">Blue Jacket & Stripe Tee</p>
                             <p class="type">Men, Jacket, Jeans</p>
-                            <p class="price">$200</p>
+                            <p class="price">$580</p>
                         </div>
                     </div>
 
@@ -113,7 +132,7 @@
                         <div class="description">
                             <p class="fw-bold mt-2 mb-0">ModernBlack Leather Suit</p>
                             <p class="type">Men, Jacket, Jeans</p>
-                            <p class="price">$200</p>
+                            <p class="price">$96</p>
                         </div>
                     </div>
                 </div>
@@ -515,15 +534,121 @@
         </section>
 
         <!-- SUBSCRIBE -->
-        <section class="subscribe d-flex align-items-center text-white justify-content-center">
-            <div>letter icon</div>
-            <p>Subscribe now and get special offers</p>
-            <input type="email" placeholder="insert your email">
-            <button>SEND</button>
+        <section class="subscribe ">
+            <div class="container">
+                <div class="row justify-content-between align-items-center text-white">
+                    <div class="col-6 d-flex">
+                       <div class="mail-box d-flex justify-content-center align-items-center">
+                          <i class="fa-regular fa-envelope fs-3"></i>
+                       </div>
+                       <p class="mb-0">Subscribe now and get special offers</p>
+                    </div>
+                    <div class="col-5 d-flex justify-content-end">
+                        <input type="email" placeholder="insert your email">
+                        <span class="button-blue">SEND</span>
+                    </div>
+                </div>
+
+                
+            </div>
         </section>
 
         <footer>
-
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-3">
+                        <img :src="footer.logoImg" alt="">
+                        <ul class="list-information">
+                            <li v-for="info in footer.informations">{{info}}</li>
+                        </ul>
+                        <div class="icons">
+                        <span>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </span>
+                        </div>
+                    </div>
+                    <div class="col-3 footer-top-rated">
+                        <p>TOP RATED</p>
+                        <div class="box d-flex justify-content-between"
+                            v-for="product in footer.topProducts">
+                            <div class="info">
+                                <p class="mb-0">{{product.type}}</p>
+                                <p class="mb-0">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                                <p class="fw-semibold">
+                                    <span class="text-decoration-line-through me-1"
+                                    v-show="(product.discountedPrice == true)">
+                                        $235
+                                    </span>
+                                    <span class="text-decoration-underline">{{product.fullPrice}}</span>
+                                </p>
+                            </div>
+                            <img :src="product.img" alt="" class="py-2">
+                        </div>
+                        <!-- <div class="box d-flex justify-content-between">
+                            <div class="info">
+                                <p class="mb-0">Black Leather Jacket</p>
+                                <p class="mb-0">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                                <p class="fw-semibold">
+                                    <span class="text-decoration-line-through me-1">$235</span>
+                                    <span class="text-decoration-underline">$200</span>
+                                </p>
+                            </div>
+                            <img src="./img/black_elegant_leather_jacket-400x520.jpg" alt="" class="py-2">
+                        </div>
+                        <div class="box d-flex justify-content-between"> -->
+                            <!-- <div class="info">
+                                <p class="mb-0">Spring Printed Dress</p>
+                                <p class="mb-0">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                                <p class="fw-semibold">$47</p>
+                            </div>
+                            <img src="./img/spring_printed_dress-400x520.jpg" alt="" class="py-2">
+                        </div> -->
+                    </div>
+                    <div class="col-3">
+                        <p>RECENT POSTS</p>
+                        <ul>
+                            <li v-for="post in footer.recentPost">
+                                <i class="fa-solid fa-chevron-right"></i>{{ post }}
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <p>TAGS</p>
+                        <ul>
+                            <li v-for="tag in footer.tags">{{ tag }}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <ul class="d-flex justify-content-center">
+                    <li v-for="term in footer.copyright">{{ term }}</li>
+                </ul>
+                <div class="payments text-center">
+                    <img :src="footer.paymentImg" alt="">
+                </div>
+            </div>
         </footer>
 
 

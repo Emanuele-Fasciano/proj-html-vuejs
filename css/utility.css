@@ -25,9 +25,23 @@
     font-weight: bold;
  }
 
+ .button-blue{
+    /* height: 40px; */
+    padding: 7px 50px;
+    background-color: aqua;
+    border-radius: 20px;
+    margin-left: 30px;
+ }
+
 
  /* TITLE SECTION */
 
  .title{
     padding-top: 6rem;
+ }
+
+ /* LIST */
+
+ ul{
+    list-style: none;
  }
