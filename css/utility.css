@@ -20,15 +20,15 @@
  .button-rectangle{
     padding: 10px 40px;
     border: 1px solid lightgray;
-    background-color: rgb(254, 248, 248);
+    background-color: hsl(0deg 0% 96%);;
     display: inline-block;
     font-weight: bold;
  }
 
  .button-blue{
-    /* height: 40px; */
+    height: 40px;
     padding: 7px 50px;
-    background-color: aqua;
+    background-color: hsl(215deg 61% 54%);
     border-radius: 20px;
     margin-left: 30px;
  }
@@ -38,6 +38,13 @@
 
  .title{
     padding-top: 6rem;
+ }
+
+ .title span{
+   display: inline-block;
+   height: 1px;
+   width: 38%;
+   background-color: lightgray;
  }
 
  /* LIST */

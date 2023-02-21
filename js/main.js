@@ -19,7 +19,7 @@
         },
 
         footer:{
-          logoImg: "./img/classic_shop_logo2x.png",
+          logoImg: "./img/classic_shop_logo_footer.png",
 
           informations: [
             "12345 North Main Street",
@@ -51,10 +51,10 @@
           ],
 
           recentPost: [
-            "Lorem ipsum dolor sit amet conse ",
+            "Lorem ipsum dolor sit amet",
             "Lorem ipsum dolor sit amet ",
             "Lorem ipsum dolor sit ",
-            "Lorem ipsum dolor sit amet conse ",
+            "Lorem ipsum dolor sit amet ",
             "Lorem ipsum dolor sit ",
             "Lorem ipsum dolor sit ",
           ],
@@ -63,8 +63,27 @@
             "Black",
             "Boots",
             "Brown",
-            "Csual",
-            "D&G"
+            "Casual",
+            "D&G",
+            "Fabric",
+            "flowers",
+            "Gray",
+            "hat",
+            "hipster",
+            "lines",
+            "multi-puropse",
+            "Black",
+            "Boots",
+            "Brown",
+            "Casual",
+            "D&G",
+            "Fabric",
+            "flowers",
+            "Gray",
+            "hat",
+            "hipster",
+            "lines",
+            "multi-puropse",              
           ],
 
           copyright:[

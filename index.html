@@ -32,29 +32,38 @@
         <!-- HEADER -->
         <header>
             <div class="container p-0">
-                <div class="upper-header d-flex justify-content-between">
+
+                <!-- upper header -->
+                <div class="upper-header d-flex justify-content-between align-items-center">
                     <div class="icons">
                         <i class="fa-brands fa-facebook"></i>
                         <i class="fa-brands fa-facebook"></i>
                         <i class="fa-brands fa-facebook"></i>
                         <i class="fa-brands fa-facebook"></i>
                     </div>
-                    <div class="account d-flex">
-                        <div class="shopping-cart">shopping-cart</div>
-                        <div class="my-account mx-3">my-account</div>
-                        <div class="cart">cart</div>
+                    <div class="account d-flex align-items-center">
+                        <div class="shopping-cart me-3 text-muted">Shopping-cart</div>
+                        <div class="my-account px-3 text-muted">My-Account<i class="fa-solid fa-chevron-down ms-2"></i></div>
+                        <div class="cart px-5"><i class="fa-solid fa-cart-shopping me-2"></i>CART</div>
                     </div>
                 </div>
+
+                <div class="line"></div>
+
+                <!-- main header -->
                 <div class="main-header d-flex justify-content-between align-items-center">
                     <div class="logo-container">
                         <img :src="header.logoImg" alt="">
                     </div>
                     <div class="links-container d-flex">
                         <ul class="d-flex">
-                            <li v-for="link in header.links">{{link}}<i class="fa-solid fa-chevron-down"></i></li>
+                            <li v-for="link in header.links"
+                                class="text-muted">
+                                {{link}}<i class="fa-solid fa-chevron-down ms-1"></i>
+                            </li>
                         </ul>
-                        <span class="button-blue text-white">{{header.buttonText}}</span>
-                        <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                        <span class="button-blue text-white mt-4">{{header.buttonText}}</span>
+                        <span><i class="fa-solid fa-magnifying-glass pt-4 ms-3 fs-4"></i></span>
                     </div>
                 </div>
             </div>
@@ -81,11 +90,12 @@
         <!-- FEATURED PRODUCTS -->
         <section class="feat-products">
             <div class="container">
-
                 <!-- title -->
-                <div class="title text-center">                  
-                    <h3>Featured Products</h3>
-                    <p>Must have products from our top sellers</p>
+                <div class="title text-center">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span></span><h3>Featured Products</h3><span></span>
+                    </div>                  
+                    <p class="text-muted">Must have products from our top sellers</p>
                 </div>
             </div>
 
@@ -173,12 +183,16 @@
         </section>
 
         <!-- BEST SELLER -->
-        <section  class="best-seller">
+        <section  class="best-seller bg-white">
 
             <!-- title -->
-            <div class="title text-center">
-                <h3>Best Seller</h3>
-                <p>Must have products from our top sellers</p>
+            <div class="container">
+                <div class="title text-center">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span></span><h3>Best Seller</h3><span></span>
+                    </div>
+                    <p class="text-muted">Must have products from our top sellers</p>
+                </div>
             </div>
 
             <!-- images -->
@@ -237,12 +251,17 @@
         </section>
 
         <!-- NEW ARRIVALS -->
-        <section class="new-arrivals">
+        <section class="new-arrivals bg-white">
 
-            <!-- title -->
-            <div class="title text-center">
-                <h3>New Arrivals</h3>
-                <p>Brand new products from top designers</p>
+            <div class="container">
+                <!-- title -->
+                <div class="title text-center">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span></span>
+                        <h3>New Arrivals</h3><span></span>
+                    </div>
+                    <p class="text-muted">Brand new products from top designers</p>
+                </div>
             </div>
 
             <!-- images -->
@@ -283,10 +302,15 @@
         <!-- BLOG -->
         <section class="blog">
 
-            <!-- title -->
-            <div class="title text-center">
-                <h3>From Our Blog</h3>
-                <p>The latest Classic Shop news</p>
+            <div class="container">
+                <!-- title -->
+                <div class="title text-center">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span></span>
+                        <h3>From Our Blog</h3><span></span>
+                    </div>
+                    <p class="text-muted">The latest Classic Shop news</p>
+                </div>
             </div>
 
             <!-- card -->
@@ -297,8 +321,8 @@
                         <img src="./img/post_img_12-700x441.jpg" alt="">
                         <div class="text">
                             <p class="fw-bold mb-0">Lorem ipsum dolor, sit amet consectetur</p>
-                            <p class="date">September 9th | 0 Comments</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                            <p class="date text-muted">September 9th | 0 Comments</p>
+                            <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
                         </div>
                     </div>
 
@@ -306,8 +330,8 @@
                         <img src="./img/post_img_11-700x441.jpg" alt="">
                         <div class="text">
                             <p class="fw-bold mb-0">Lorem ipsum dolor, sit amet consectetur</p>
-                            <p class="date">September 9th | 0 Comments</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                            <p class="date text-muted">September 9th | 0 Comments</p>
+                            <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
                         </div>
                     </div>
 
@@ -315,8 +339,8 @@
                         <img src="./img/post_img_10-700x441.jpg" alt="">
                         <div class="text">
                             <p class="fw-bold mb-0">Lorem ipsum dolor, sit amet consectetur</p>
-                            <p class="date">September 9th | 0 Comments</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                            <p class="date text-muted">September 9th | 0 Comments</p>
+                            <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
                         </div>
                     </div>
                 </div>
@@ -513,7 +537,7 @@
 
         <!-- BRANDS -->
         <section class="brands">
-            <h4 class="text-center my-5">BRANDS LOGOS</h4>
+            <h4 class="text-center my-5 text-muted">BRANDS LOGOS</h4>
             <div class="container d-flex justify-content-between">
                 <div class="img-container">
                     <img src="./img/b_logotype_6.png">
@@ -553,13 +577,19 @@
             </div>
         </section>
 
+        <!-- FOOTER -->
         <footer>
-            <div class="container mt-5">
+            <div class="container">
                 <div class="row">
-                    <div class="col-3">
+
+                    <!-- INFORMATION -->
+                    <div class="information col-3">
                         <img :src="footer.logoImg" alt="">
-                        <ul class="list-information">
-                            <li v-for="info in footer.informations">{{info}}</li>
+                        <ul class="list-information ps-0 my-5">
+                            <li v-for="info in footer.informations"
+                                class="mb-2">
+                                {{info}}
+                            </li>
                         </ul>
                         <div class="icons">
                         <span>
@@ -570,8 +600,10 @@
                         </span>
                         </div>
                     </div>
+
+                    <!-- TOP RATED PRODUCTS -->
                     <div class="col-3 footer-top-rated">
-                        <p>TOP RATED</p>
+                        <p class="mb-5">TOP RATED</p>
                         <div class="box d-flex justify-content-between"
                             v-for="product in footer.topProducts">
                             <div class="info">
@@ -588,62 +620,42 @@
                                     v-show="(product.discountedPrice == true)">
                                         $235
                                     </span>
-                                    <span class="text-decoration-underline">{{product.fullPrice}}</span>
+                                    <span class="text-decoration-underline text-white">{{product.fullPrice}}</span>
                                 </p>
-                            </div>
+                            </div> 
                             <img :src="product.img" alt="" class="py-2">
                         </div>
-                        <!-- <div class="box d-flex justify-content-between">
-                            <div class="info">
-                                <p class="mb-0">Black Leather Jacket</p>
-                                <p class="mb-0">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </p>
-                                <p class="fw-semibold">
-                                    <span class="text-decoration-line-through me-1">$235</span>
-                                    <span class="text-decoration-underline">$200</span>
-                                </p>
-                            </div>
-                            <img src="./img/black_elegant_leather_jacket-400x520.jpg" alt="" class="py-2">
-                        </div>
-                        <div class="box d-flex justify-content-between"> -->
-                            <!-- <div class="info">
-                                <p class="mb-0">Spring Printed Dress</p>
-                                <p class="mb-0">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </p>
-                                <p class="fw-semibold">$47</p>
-                            </div>
-                            <img src="./img/spring_printed_dress-400x520.jpg" alt="" class="py-2">
-                        </div> -->
+
+                    <!-- RECENT POSTS -->
                     </div>
-                    <div class="col-3">
-                        <p>RECENT POSTS</p>
+                    <div class="col-3 footer-recent-posts">
+                        <p class="mb-4 ms-4">RECENT POSTS</p>
                         <ul>
-                            <li v-for="post in footer.recentPost">
+                            <li v-for="post in footer.recentPost"
+                                class="py-3 list-post">
                                 <i class="fa-solid fa-chevron-right"></i>{{ post }}
                             </li>
                         </ul>
                     </div>
-                    <div class="col-3">
-                        <p>TAGS</p>
-                        <ul>
-                            <li v-for="tag in footer.tags">{{ tag }}</li>
+
+                    <!-- TAGS -->
+                    <div class="col-3 tags">
+                        <p class="ms-4">TAGS</p>
+                        <ul class="d-flex flex-wrap">
+                            <li v-for="tag in footer.tags"
+                                class="tag-container">
+                                {{ tag }}
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="copyright">
                 <ul class="d-flex justify-content-center">
-                    <li v-for="term in footer.copyright">{{ term }}</li>
+                    <li v-for="term in footer.copyright"
+                        class="px-3">
+                        {{ term }}
+                    </li>
                 </ul>
                 <div class="payments text-center">
                     <img :src="footer.paymentImg" alt="">

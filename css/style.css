@@ -14,12 +14,30 @@ body{
  }
 
  header .upper-header{
-   background-color: lightcoral;
    height: 50px;
  }
 
+ header .account{
+   height: 100%;
+ }
+
+ header .upper-header .my-account{
+   border-left: 1px solid lightgray;
+   border-right: 1px solid lightgray;
+   height: 100%;
+   line-height: 50px;
+ }
+
+  header .upper-header .cart{
+   background-color: hsl(0deg 0% 98%);
+  }
+
+ header .line{
+   height: 1px;
+   background-color: black;
+ }
+
  header .main-header{
-    background-color: lightblue;
     height: 100px;
  }
 
@@ -29,7 +47,9 @@ body{
 
  header .links-container li{
    width: 100px;
-   border: 1px solid black;
+   height: 100%;
+   line-height: 84px;
+   /* border: 1px solid black; */
    text-align: center;
  }
 
@@ -108,7 +128,6 @@ body{
 .best-seller .container .prev-img {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
     left: 0;
     transform: translateX(-50%);
     background-color: lightgray;
@@ -121,9 +140,8 @@ body{
 .best-seller .container .next-img {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
     right: 0;
-    transform: translateX(-50%);
+    transform: translateX(50%);
     background-color: lightgray;
     width: 30px;
     height: 60px;
@@ -215,6 +233,10 @@ body{
     width: 60px;
   }
 
+  .summary i{
+   color: hsl(216deg 60% 55%);
+  }
+
 
   /* BRANDS */
   .brands{
@@ -225,7 +247,7 @@ body{
   /* SUBSCRIBE */
   .subscribe{
     height: 30vh;
-    background-color: gray;
+    background-color: hsl(214deg 7% 20%);
   }
 
   .subscribe .container, .row{
@@ -236,8 +258,9 @@ body{
    width: 60px;
    height: 60px;
    border-radius: 50%;
-   background-color: black;
+   background-color: hsl(214deg 8% 18%);
    margin-right: 40px;
+   color: hsl(213deg 5% 48%);
   }
 
   .subscribe .col-6 p{
@@ -254,14 +277,40 @@ body{
   }
 
   /* FOOTER */
-  footer .col-3{
-   height: 500px;
-   background-color: lightblue;
-   border: 1px solid black;
+footer{
+   background-color: #2B2E32;
+   color: hsl(180deg 1% 77%);
+}
+
+footer .row{
+   padding: 7rem 0rem;
+}
+
+footer .information img{
+   width: 70%;
+   margin-bottom: 3rem;
+}
+
+  footer .footer-top-rated .box {
+     border-bottom: 1px solid lightgray;
   }
 
   footer .footer-top-rated img{
    width: 70px;
+  }
+
+   footer .footer-top-rated .info i{
+      color: hsl(215deg 61% 54%);
+   }
+
+  footer .list-post{
+   border-bottom: 1px solid lightgray
+  }
+
+  footer .tags .tag-container{
+   border: 1px solid lightgray;
+   margin: 3px;
+   padding: 5px;
   }
 
   footer .copyright{
