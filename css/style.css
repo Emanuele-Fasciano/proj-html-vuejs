@@ -16,6 +16,7 @@ body{
 
  header .upper-header{
    height: 50px;
+   border-bottom: 1px solid lightgray;
  }
 
  header .account{
@@ -319,6 +320,11 @@ footer .information img{
    margin: 3px;
    padding: 5px;
   }
+
+   footer .tags .tag-container:hover {
+    background-color: lightgray;
+    color: #2B2E32;
+   }
 
   footer .copyright{
    height: 100px;

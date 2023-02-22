@@ -32,20 +32,19 @@
           topProducts:[
             {
               type: "Leather Gloves",
-              fullPrice: "$45",
+              price: "$45",
               img: "./img/leather_gloves-400x520.jpg"
             },
 
-                        {
+            {
               type: "Black Leather Jacket",
-              fullPrice: "$235",
-              discountedPrice: "$200",
+              price: "$235",
               img: "./img/black_elegant_leather_jacket-400x520.jpg"
             },
 
-                        {
+            {
               type: "Spring Printed Dress",
-              fullPrice: "$47",
+              price: "$47",
               img: "./img/spring_printed_dress-400x520.jpg"
             },
           ],

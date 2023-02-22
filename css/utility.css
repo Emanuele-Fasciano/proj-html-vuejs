@@ -120,3 +120,30 @@
  .img-container:hover{
    background-image: linear-gradient(#688CD4, #EBA5D2);
  }
+
+ /* HOVER IMG 2 */
+
+ .img-container .img-details{
+   position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: none;
+ }
+
+  .img-container:hover .img-details{
+   display: block;
+  }
+
+ .img-container .add_details{
+   position: absolute;
+   width: 100%;
+   bottom: 0;
+   display: none;
+   color: white;
+ }
+
+  .img-container:hover .add_details{
+   display: flex;
+  }
+

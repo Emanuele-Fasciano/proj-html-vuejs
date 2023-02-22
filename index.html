@@ -55,8 +55,6 @@
                     </div>
                 </div>
 
-                <div class="line"></div>
-
                 <!-- main header -->
                 <div class="main-header d-flex justify-content-between align-items-center">
                     <div class="logo-container">
@@ -144,7 +142,7 @@
                         </div>
                         <div class="description">
                             <p class="fw-bold mt-2 mb-0">Black Leather Suit</p>
-                            <p class="type">Men, Jacket, Jeans</p>
+                            <p class="type">Men, Jackets</p>
                             <p class="price">$176</p>
                         </div>
                     </div>
@@ -158,7 +156,7 @@
                         </div>
                         <div class="description">
                             <p class="fw-bold mt-2 mb-0">Blue Jacket & Stripe Tee</p>
-                            <p class="type">Men, Jacket, Jeans</p>
+                            <p class="type">Men, Jacket, Suits</p>
                             <p class="price">$580</p>
                         </div>
                     </div>
@@ -172,7 +170,7 @@
                         </div>
                         <div class="description">
                             <p class="fw-bold mt-2 mb-0">ModernBlack Leather Suit</p>
-                            <p class="type">Men, Jacket, Jeans</p>
+                            <p class="type">Men, Jackets, </p>
                             <p class="price">$96</p>
                         </div>
                     </div>
@@ -215,7 +213,6 @@
 
         <!-- BEST SELLER -->
         <section  class="best-seller bg-white">
-
             <!-- title -->
             <div class="container">
                 <div class="title text-center">
@@ -314,37 +311,67 @@
             <div class="container-fluid d-flex">
                 <div class="img-container">
                     <img src="./img/spring_printed_dress-400x520.jpg" alt="">
-                    <span class="d-flex justify-content-center align-items-center">
-                        <i class="fa-regular fa-square-check"></i>
-                    </span>
+                    <div class="img-details text-white text-center">
+                        <p class="fw-bold">Spring printed dress</p>
+                        <p>Women, Dress</p>
+                        <p class="fw-bold">$47</p>
+                    </div>
+                    <div class="add_details justify-content-between text-white">
+                        <p class="ms-5 d-flex mb-3"><i class="fa-solid fa-cart-shopping me-1"></i>Add to cart</p>
+                        <p class="me-5 d-flex mb-3"><i class="fa-solid fa-ellipsis-vertical me-1"></i>Details</p>
+                    </div>
                 </div>
 
                 <div class="img-container">
                     <img src="./img/modern_love_tee-400x520.jpg" alt="">
-                    <span class="d-flex justify-content-center align-items-center">
-                        <i class="fa-regular fa-square-check"></i>
-                    </span>
+                    <div class="img-details text-white text-center">
+                        <p class="fw-bold">Modern Love Tee</p>
+                        <p>Women, T-Shirts</p>
+                        <p class="fw-bold">$68</p>
+                    </div>
+                    <div class="add_details justify-content-between">
+                        <p class="add-to-cart ms-5 d-flex mb-3"><i class="fa-solid fa-cart-shopping me-1"></i>Add to cart</p>
+                        <p class="show-detalis me-5 d-flex mb-3"><i class="fa-solid fa-ellipsis-vertical me-1"></i>Details</p>
+                    </div>
                 </div>
 
                 <div class="img-container">
                     <img src="./img/black_leather_jacket-400x520.jpg" alt="">
-                    <span class="d-flex justify-content-center align-items-center">
-                        <i class="fa-regular fa-square-check"></i>
-                    </span>
+                    <div class="img-details text-white text-center">
+                        <p class="fw-bold">Black leather jacket</p>
+                        <p>Women, Jacket</p>
+                        <p class="fw-bold">$125</p>
+                    </div>
+                    <div class="add_details justify-content-between text-white">
+                        <p class="ms-5 d-flex mb-3"><i class="fa-solid fa-cart-shopping me-1"></i>Add to cart</p>
+                        <p class="me-5 d-flex mb-3"><i class="fa-solid fa-ellipsis-vertical me-1"></i>Details</p>
+                    </div>
                 </div>
 
                 <div class="img-container">
                     <img src="./img/black_elegant_leather_jacket-400x520.jpg" alt="">
-                    <span class="d-flex justify-content-center align-items-center">
-                        <i class="fa-regular fa-square-check"></i>
-                    </span>
+                    <div class="img-details text-white text-center">
+                        <p class="fw-bold">Black elegant jacket</p>
+                        <p>Men, Jacket</p>
+                        <p class="fw-bold">$200</p>
+                    </div>
+                    <div class="add_details justify-content-between text-white">
+                        <p class="ms-5 d-flex mb-3"><i class="fa-solid fa-cart-shopping me-1"></i>Add to cart</p>
+                        <p class="me-5 d-flex mb-3"><i class="fa-solid fa-ellipsis-vertical me-1"></i>Details</p>
+                    </div>
                 </div>
 
                 <div class="img-container">
                     <img src="./img/hipster_black_top-400x520.jpg" alt="">
-                    <span class="d-flex justify-content-center align-items-center">
-                        <i class="fa-regular fa-square-check"></i>
-                    </span>
+                    <div class="img-details text-white text-center">
+                        <p class="fw-bold">Hipster black top</p>
+                        <p>Women, Top</p>
+                        <p class="fw-bold">$57</p>
+                    </div>
+                    <div class="add_details justify-content-between text-white">
+                        <p class="ms-5 d-flex mb-3"><i class="fa-solid fa-cart-shopping me-1"></i>Add to cart</p>
+                        <p class="me-5 d-flex mb-3"><i class="fa-solid fa-ellipsis-vertical me-1"></i>Details</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -679,11 +706,7 @@
                                     <i class="fa-solid fa-star"></i>
                                 </p>
                                 <p class="fw-semibold">
-                                    <span class="text-decoration-line-through me-1"
-                                    v-show="(product.discountedPrice == true)">
-                                        $235
-                                    </span>
-                                    <span class="text-decoration-underline text-white">{{product.fullPrice}}</span>
+                                    <span class="text-decoration-underline text-white">{{product.price}}</span>
                                 </p>
                             </div> 
                             <img :src="product.img" alt="" class="py-2">
